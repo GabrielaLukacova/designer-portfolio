@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portfolio of Gabriela Lukacova — UX/UI and Digital Designer creating thoughtful, user-focused digital experiences.">
+
+    <title>Gabriela Lukacova | UX/UI & Digital Designer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="container nav-inner">
+
+        <a href="#home" class="logo">Gabriela Lukacova</a>
+
+        <nav class="desktop-nav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#expertise" class="nav-link">Expertise</a>
+            <a href="assets/CV_Gabriela_Lukacova.pdf" target="_blank" class="nav-link">Resume</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <button class="menu-button" id="menuButton" aria-label="Open menu">
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="assets/CV_Gabriela_Lukacova.pdf" target="_blank">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <div class="section-label">
+                UX/UI & DIGITAL DESIGNER
+                <span></span>
+            </div>
+
+            <h1>
+                Digital experiences<br>
+                that feel <em>human.</em>
+            </h1>
+
+            <p class="hero-description">
+                I design user-focused websites and digital products that are
+                clear, engaging and easy to use — combining creativity with
+                a technical understanding.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#work" class="text-link">
+                    View my work
+                    <span>↓</span>
+                </a>
+
+                <a href="assets/CV_Gabriela_Lukacova.pdf"
+                   target="_blank"
+                   class="text-link secondary-link">
+                    My CV
+                    <span>↗</span>
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual reveal">
+
+            <img src="images/GabrielaTransparent.png"
+                 alt="Gabriela Lukacova"
+                 class="hero-person">
+
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WORK -->
+
+<section class="section work-section" id="work">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div>
+                <div class="section-label">
+                    SELECTED WORK
+                    <span></span>
+                </div>
+
+                <h2>Projects with purpose.</h2>
+            </div>
+
+            <p>
+                A selection of projects where design, usability and thoughtful
+                problem-solving come together.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+            <article class="project reveal">
+
+                <div class="project-image project-placeholder">
+                    <span>Kim's Frisør</span>
+                </div>
+
+                <div class="project-meta">
+                    <span>01</span>
+                    <span>Website / UX/UI</span>
+                </div>
+
+                <h3>Kim's Frisør</h3>
+
+                <p>
+                    A complete website created for a real barber business,
+                    from UX/UI and visual direction to a responsive digital product.
+                </p>
+
+                <div class="tags">
+                    <span>UX/UI</span>
+                    <span>Web Design</span>
+                    <span>Responsive</span>
+                </div>
+
+            </article>
+
+
+            <article class="project reveal">
+
+                <div class="project-image project-placeholder">
+                    <span>FUKAJ</span>
+                </div>
+
+                <div class="project-meta">
+                    <span>02</span>
+                    <span>E-commerce / UX/UI</span>
+                </div>
+
+                <h3>FUKAJ Redesign</h3>
+
+                <p>
+                    An e-commerce redesign focused on clearer navigation,
+                    visual hierarchy and a more intuitive shopping experience.
+                </p>
+
+                <div class="tags">
+                    <span>UX/UI</span>
+                    <span>User Flow</span>
+                    <span>Usability</span>
+                </div>
+
+            </article>
+
+
+            <article class="project reveal">
+
+                <div class="project-image project-placeholder">
+                    <span>Dishly</span>
+                </div>
+
+                <div class="project-meta">
+                    <span>03</span>
+                    <span>Mobile / AI</span>
+                </div>
+
+                <h3>Dishly</h3>
+
+                <p>
+                    A mobile recipe experience combining an intuitive interface
+                    with AI-powered functionality.
+                </p>
+
+                <div class="tags">
+                    <span>UX/UI</span>
+                    <span>Mobile</span>
+                    <span>AI</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section about-section" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-copy reveal">
+
+            <div class="section-label">
+                ABOUT ME
+                <span></span>
+            </div>
+
+            <h2>
+                Creative mind.<br>
+                <em>Technical</em><br>
+                foundation.
+            </h2>
+
+            <p>
+                I'm a digital designer with a background in computer science.
+                I enjoy turning ideas into visual concepts, solving problems
+                and creating digital experiences that feel clear and purposeful.
+            </p>
+
+            <p>
+                I care about the details, value collaboration and always keep
+                the user at the centre of the design process.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid-cards reveal">
+
+            <article class="about-card">
+                <span class="about-number">01</span>
+                <div class="about-icon">◎</div>
+                <h3>User-focused</h3>
+                <p>Designing with real people and their needs in mind.</p>
+            </article>
+
+            <article class="about-card">
+                <span class="about-number">02</span>
+                <div class="about-icon">◇</div>
+                <h3>Detail-oriented</h3>
+                <p>Small decisions can make a big difference.</p>
+            </article>
+
+            <article class="about-card">
+                <span class="about-number">03</span>
+                <div class="about-icon">✦</div>
+                <h3>Creative</h3>
+                <p>Turning ideas and problems into thoughtful solutions.</p>
+            </article>
+
+            <article class="about-card">
+                <span class="about-number">04</span>
+                <div class="about-icon">↗</div>
+                <h3>Always learning</h3>
+                <p>Curious, adaptable and continuously improving.</p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERTISE -->
+
+<section class="section expertise-section" id="expertise">
+
+    <div class="container">
+
+        <div class="expertise-heading reveal">
+
+            <div>
+                <div class="section-label">
+                    EXPERTISE
+                    <span></span>
+                </div>
+
+                <h2>
+                    Creative skills.<br>
+                    <em>Real results.</em>
+                </h2>
+            </div>
+
+            <p>
+                I combine design, technology and strategy to create digital
+                experiences that are both thoughtful and effective.
+            </p>
+
+        </div>
+
+
+        <div class="expertise-grid">
+
+            <article class="expertise-card reveal">
+                <img src="images/skills/Skills-UX-UI-Design.png" alt="" class="expertise-icon-img">
+
+                <h3>UX/UI Design</h3>
+
+                <p>
+                    User research · Wireframing ·<br>
+                    Prototyping · Design systems
+                </p>
+            </article>
+
+
+            <article class="expertise-card reveal">
+                <img src="images/skills/Skills-Digital-Design.png" alt="" class="expertise-icon-img">
+
+                <h3>Digital Design</h3>
+
+                <p>
+                    Visual design · Layout · Typography ·<br>
+                    Adobe Creative Suite
+                </p>
+            </article>
+
+
+            <article class="expertise-card reveal">
+                <img src="images/skills/Skills-Branding-&-Visual-Identity.png" alt="" class="expertise-icon-img">
+
+                <h3>Branding & Visual Identity</h3>
+
+                <p>
+                    Brand identity · Logo design ·<br>
+                    Visual consistency
+                </p>
+            </article>
+
+
+            <article class="expertise-card reveal">
+                <img src="images/skills/Skills-Content-Creation.png" alt="" class="expertise-icon-img">
+
+                <h3>Content Creation</h3>
+
+                <p>
+                    Graphic design · Social content ·<br>
+                    Photo & video
+                </p>
+            </article>
+
+
+            <article class="expertise-card reveal">
+                <img src="images/skills/Skills-Digital-Marketing.png" alt="" class="expertise-icon-img">
+
+                <h3>Digital Marketing</h3>
+
+                <p>
+                    Digital strategy · Social media ·<br>
+                    SEO · Email marketing
+                </p>
+            </article>
+
+
+            <article class="expertise-card reveal">
+                <img src="images/skills/Skills-Web-Development.png" alt="" class="expertise-icon-img">
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Responsive design · Web feasibility ·<br>
+                    CMS
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TOOLS -->
+
+<section class="tools-section">
+
+    <div class="container">
+
+        <div class="tools-header reveal">
+
+            <div class="section-label">
+                TOOLS & TECHNOLOGIES
+                <span></span>
+            </div>
+
+            <h2>Tools I work with.</h2>
+
+        </div>
+
+
+        <div class="tools-row reveal">
+
+            <div class="tool">
+                <img src="images/tools/Tools-Figma.png" alt="Figma">
+                <strong>Figma</strong>
+                <span>UX/UI Design</span>
+            </div>
+
+            <div class="tool">
+                <img src="images/tools/Tools-Photoshop.png" alt="Photoshop">
+                <strong>Photoshop</strong>
+                <span>Image Editing</span>
+            </div>
+
+            <div class="tool">
+                <img src="images/tools/Tools-Illustrator.png" alt="Illustrator">
+                <strong>Illustrator</strong>
+                <span>Visual Design</span>
+            </div>
+
+            <div class="tool">
+                <img src="images/tools/Tools-InDesign.png" alt="InDesign">
+                <strong>InDesign</strong>
+                <span>Layout Design</span>
+            </div>
+
+            <div class="tool">
+                <img src="images/tools/Tools-PremierePro.png" alt="Premiere Pro">
+                <strong>Premiere Pro</strong>
+                <span>Video</span>
+            </div>
+
+            <div class="tool">
+                <img src="images/tools/Tools-AfterEffects.png" alt="After Effects">
+                <strong>After Effects</strong>
+                <span>Motion</span>
+            </div>
+
+            <div class="tool">
+                <img src="images/tools/Tools-Canva.png" alt="Canva">
+                <strong>Canva</strong>
+                <span>Design</span>
+            </div>
+
+            <div class="tool">
+                <img src="images/tools/Tools-Frontend.png" alt="HTML CSS JavaScript">
+                <strong>HTML / CSS / JS</strong>
+                <span>Frontend</span>
+            </div>
+
+            <div class="tool">
+                <img src="images/tools/Tools-WordPress.png" alt="WordPress">
+                <strong>WordPress</strong>
+                <span>CMS</span>
+            </div>
+
+            <div class="tool">
+                <img src="images/tools/Tools-GitHub.png" alt="GitHub">
+                <strong>GitHub</strong>
+                <span>Development</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- CONTACT -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-copy reveal">
+
+            <div class="section-label light-label">
+                LOOKING FOR NEW OPPORTUNITIES
+                <span></span>
+            </div>
+
+            <h2>
+                Let's work<br>
+                together.
+            </h2>
+
+            <p>
+                I'm looking for an opportunity within UX/UI and digital design
+                where I can contribute creatively, keep learning and create
+                meaningful digital experiences.
+            </p>
+
+        </div>
+
+
+        <div class="contact-info reveal">
+
+            <a href="mailto:gabriela@email.com">
+                <small>Email</small>
+                <strong>gabriela@email.com</strong>
+            </a>
+
+            <a href="tel:+4512345678">
+                <small>Phone</small>
+                <strong>+45 12 34 56 78</strong>
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank">
+                <small>LinkedIn</small>
+                <strong>Gabriela Lukacova ↗</strong>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-inner">
+
+        <div>
+            <strong>Gabriela Lukacova</strong>
+            <p>UX/UI & Digital Designer</p>
+        </div>
+
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <p>© <span id="currentYear"></span> Gabriela Lukacova</p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

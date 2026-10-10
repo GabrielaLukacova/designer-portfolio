@@ -1,0 +1,1740 @@
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+    --cream: #F7F5F0;
+    --cream-light: #FAF9F6;
+
+    --text: #171817;
+    --text-soft: #555955;
+
+    --dark: #0E1013;
+    --dark-card: #121417;
+    --dark-border: #35383C;
+
+    --gold: #AF916A;
+    --light: #F3F4F6;
+
+    --line: #D8D5CE;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--text);
+
+    font-family: "DM Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.barber-case-study {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.portfolio-header {
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5vw;
+
+    background: #FAF9F6;
+
+    border-bottom: 1px solid rgba(0,0,0,.05);
+
+    position: relative;
+    z-index: 100;
+}
+
+.logo {
+    text-decoration: none;
+
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.portfolio-header nav {
+    display: flex;
+    gap: 36px;
+}
+
+.portfolio-header nav a {
+    text-decoration: none;
+
+    color: #343633;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: .13em;
+    text-transform: uppercase;
+
+    transition: opacity .2s ease;
+}
+
+.portfolio-header nav a:hover {
+    opacity: .55;
+}
+
+
+/* =========================================================
+   SHARED TYPOGRAPHY
+========================================================= */
+
+h1,
+h2 {
+    margin: 0;
+
+    /* font-family: "Playfair Display", Georgia, serif; */
+    font-weight: 400;
+
+    line-height: 1;
+    letter-spacing: -.04em;
+}
+
+h2 {
+    font-size: clamp(42px, 4vw, 66px);
+}
+
+.eyebrow,
+.section-label {
+    margin: 0 0 22px;
+
+    color: #626762;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.section-description {
+    max-width: 510px;
+
+    margin: 27px 0 0;
+
+    color: var(--text-soft);
+
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   FULL-WIDTH IMAGE SECTIONS
+========================================================= */
+
+.image-section {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.background-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: -2;
+}
+
+.image-content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 690px;
+    background: var(--cream);
+}
+
+.hero-content {
+    width: 47%;
+
+    min-height: 690px;
+
+    padding-left: 7vw;
+    padding-right: 2vw;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(247,245,240,.27) 0%,
+            rgba(247,245,240,.16) 30%,
+            rgba(247,245,240,.04) 47%,
+            rgba(247,245,240,0) 60%
+        );
+}
+
+.hero .eyebrow {
+    color: #5C625E;
+}
+
+.hero h1 {
+    max-width: 720px;
+
+    color: #151616;
+
+    font-size: clamp(53px, 4.8vw, 82px);
+
+    line-height: .98;
+}
+
+.hero-description {
+    max-width: 520px;
+
+    margin: 30px 0 0;
+
+    color: #555955;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.75;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-top: 33px;
+}
+
+.tags span {
+    padding: 9px 17px;
+
+    border: 1px solid rgba(45,49,45,.42);
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.16);
+
+    color: #3F433F;
+
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   01 — OVERVIEW
+========================================================= */
+
+.overview {
+    min-height: 610px;
+
+    display: grid;
+
+    grid-template-columns: 43% 57%;
+
+    align-items: center;
+
+    gap: 4vw;
+
+    padding: 95px 7vw;
+
+    background: #FAF9F6;
+}
+
+.overview-copy {
+    padding-right: 2vw;
+}
+
+.overview-image {
+    width: 100%;
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 4px;
+}
+
+.overview-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================================
+   02 — PROCESS
+========================================================= */
+
+.process {
+    padding: 110px 7vw 120px;
+
+    background: var(--cream);
+}
+
+
+/*
+The intro is intentionally aligned right.
+This creates a more editorial layout and separates
+the section visually from Overview.
+*/
+
+.process-heading {
+    width: min(690px, 58%);
+
+    margin: 0 0 75px auto;
+
+    text-align: right;
+}
+
+.process-heading .section-label {
+    margin-bottom: 18px;
+}
+
+.process-heading h2 {
+    color: #171817;
+}
+
+.process-heading > p:last-child {
+    max-width: 580px;
+
+    margin: 25px 0 0 auto;
+
+    color: #626661;
+
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+
+/* PROCESS FLOW */
+
+.process-flow {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.process-step {
+    flex: 1;
+
+    text-align: center;
+}
+
+.process-icon {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 27px;
+}
+
+.process-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.process-step h3 {
+    margin: 0 0 12px;
+
+    color: #20211F;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.process-step p {
+    max-width: 210px;
+
+    margin: 0 auto;
+
+    color: #696D68;
+
+    font-size: 11px;
+    line-height: 1.65;
+}
+
+.process-connector {
+    flex: .45;
+
+    height: 1px;
+
+    margin-top: 36px;
+
+    background: #CFCDC6;
+}
+
+
+/* =========================================================
+   03 — VISUAL DESIGN
+========================================================= */
+
+.visual-design {
+    min-height: 660px;
+
+    background: #F5F2EC;
+}
+
+.visual-content {
+    width: 44%;
+
+    min-height: 660px;
+
+    padding-left: 7vw;
+    padding-right: 2vw;
+}
+
+.visual-overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(247,245,240,.22) 0%,
+            rgba(247,245,240,.10) 35%,
+            rgba(247,245,240,0) 57%
+        );
+}
+
+.visual-design .section-label {
+    color: #5E635E;
+}
+
+.visual-design h2 {
+    color: #171817;
+}
+
+.visual-design .section-description {
+    color: #555955;
+}
+
+
+/* =========================================================
+   DESIGN SYSTEM
+========================================================= */
+
+.design-system {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+.detail-label {
+    margin: 0 0 15px;
+
+    color: #5E635E;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: .17em;
+}
+
+.colour-row {
+    display: flex;
+    gap: 13px;
+}
+
+.colour-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.colour-item small {
+    color: #656965;
+
+    font-size: 7px;
+}
+
+.swatch {
+    display: block;
+
+    width: 39px;
+    height: 39px;
+
+    border-radius: 50%;
+}
+
+.colour-dark-one {
+    background: #0E1013;
+}
+
+.colour-dark-two {
+    background: #1A1C1F;
+}
+
+.colour-gold {
+    background: #AF916A;
+}
+
+.colour-light {
+    background: #F3F4F6;
+
+    border: 1px solid #D7D8D9;
+}
+
+.design-divider {
+    width: 1px;
+    height: 70px;
+
+    background: #D2D0C9;
+}
+
+.design-type strong {
+    display: block;
+
+    color: #20211F;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.weights {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 8px;
+}
+
+.weights span {
+    color: #5D625D;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   04 — EXPERIENCE
+========================================================= */
+
+.experience {
+    padding: 100px 7vw 105px;
+
+    background: #0E1013;
+
+    color: #F3F4F6;
+}
+
+.experience-heading {
+    max-width: 720px;
+}
+
+.experience .section-label {
+    color: #C3A274;
+}
+
+.experience-heading h2 {
+    color: #F3F4F6;
+}
+
+.experience-heading > p:last-child {
+    max-width: 570px;
+
+    margin: 24px 0 0;
+
+    color: #B8BABC;
+
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+
+/* EXPERIENCE CARDS */
+
+.experience-grid {
+    max-width: 1250px;
+
+    margin: 52px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 17px;
+}
+
+.experience-card {
+    min-height: 190px;
+
+    padding: 28px 32px 30px;
+
+    border: 1px solid #383B3F;
+
+    background: #121417;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(175,145,106,.78);
+
+    background: #15171A;
+}
+
+
+/*
+Much smaller gap than before.
+*/
+
+.card-number {
+    display: block;
+
+    margin-bottom: 27px;
+
+    color: #C3A274;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: .16em;
+}
+
+.experience-card h3 {
+    margin: 0 0 11px;
+
+    color: #F5F5F3;
+
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.experience-card p {
+    max-width: 340px;
+
+    margin: 0;
+
+    color: #B0B2B4;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   05 — FINAL RESULT
+========================================================= */
+
+.result {
+    min-height: 610px;
+
+    background: #454938;
+}
+
+.result-content {
+    width: 46%;
+
+    min-height: 610px;
+
+    padding-left: 7vw;
+    padding-right: 3vw;
+}
+
+.result-overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(14,16,19,.66) 0%,
+            rgba(14,16,19,.51) 27%,
+            rgba(14,16,19,.26) 44%,
+            rgba(14,16,19,.05) 59%,
+            rgba(14,16,19,0) 70%
+        );
+}
+
+.result .section-label {
+    color: #D6B98F;
+}
+
+.result h2 {
+    color: #F7F4ED;
+
+    text-shadow:
+        0 2px 14px rgba(0,0,0,.15);
+}
+
+.result-content > p:last-child {
+    max-width: 510px;
+
+    margin: 27px 0 0;
+
+    color: #E6E4DE;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    text-shadow:
+        0 1px 8px rgba(0,0,0,.18);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.case-footer {
+    padding: 55px 7vw;
+
+    background: #0E1013;
+}
+
+.case-footer a {
+    color: #F3F4F6;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    letter-spacing: .08em;
+
+    transition: opacity .2s ease;
+}
+
+.case-footer a:hover {
+    opacity: .6;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .hero-content,
+    .visual-content,
+    .result-content {
+        width: 54%;
+    }
+
+
+    .hero,
+    .hero-content {
+        min-height: 620px;
+    }
+
+
+    .hero h1 {
+        font-size: clamp(48px, 6vw, 68px);
+    }
+
+
+    .overview {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 85px 8vw;
+    }
+
+
+    .overview-copy {
+        padding-right: 0;
+    }
+
+
+    .overview-image {
+        height: auto;
+    }
+
+
+    .overview-image img {
+        aspect-ratio: 16 / 9;
+    }
+
+
+    .process-heading {
+        width: 70%;
+    }
+
+
+    .process-flow {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 65px 40px;
+    }
+
+
+    .process-connector {
+        display: none;
+    }
+
+
+    .visual-design,
+    .visual-content {
+        min-height: 620px;
+    }
+
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .experience-card {
+        min-height: auto;
+    }
+
+
+    .result,
+    .result-content {
+        min-height: 560px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .portfolio-header {
+        height: 65px;
+
+        padding: 0 22px;
+    }
+
+
+    .logo {
+        font-size: 16px;
+    }
+
+
+    .portfolio-header nav {
+        gap: 13px;
+    }
+
+
+    .portfolio-header nav a {
+        font-size: 7px;
+    }
+
+
+    h2 {
+        font-size: 40px;
+    }
+
+
+    /* HERO */
+
+    .hero,
+    .hero-content {
+        min-height: 610px;
+    }
+
+
+    .hero-content {
+        width: 100%;
+
+        padding: 65px 24px;
+    }
+
+
+    .hero h1 {
+        max-width: 500px;
+
+        font-size: 45px;
+    }
+
+
+    .hero-description {
+        max-width: 390px;
+
+        font-size: 13px;
+    }
+
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(247,245,240,.97) 0%,
+                rgba(247,245,240,.91) 60%,
+                rgba(247,245,240,.40) 100%
+            );
+    }
+
+
+    /* OVERVIEW */
+
+    .overview {
+        gap: 42px;
+
+        padding: 75px 24px;
+    }
+
+
+    /* PROCESS */
+
+    .process {
+        padding: 80px 24px;
+    }
+
+
+    .process-heading {
+        width: 100%;
+
+        margin-bottom: 60px;
+
+        text-align: right;
+    }
+
+
+    .process-heading > p:last-child {
+        max-width: 100%;
+    }
+
+
+    .process-flow {
+        grid-template-columns: 1fr;
+
+        gap: 52px;
+    }
+
+
+    .process-step p {
+        max-width: 290px;
+    }
+
+
+    /* VISUAL DESIGN */
+
+    .visual-design,
+    .visual-content {
+        min-height: 650px;
+    }
+
+
+    .visual-content {
+        width: 100%;
+
+        padding: 70px 24px;
+    }
+
+
+    .visual-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(247,245,240,.97) 0%,
+                rgba(247,245,240,.89) 60%,
+                rgba(247,245,240,.28) 100%
+            );
+    }
+
+
+    .design-system {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+
+    .design-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience {
+        padding: 80px 24px;
+    }
+
+
+    .experience-grid {
+        margin-top: 42px;
+
+        gap: 12px;
+    }
+
+
+    .experience-card {
+        min-height: auto;
+
+        padding: 26px 27px 29px;
+    }
+
+
+    .card-number {
+        margin-bottom: 22px;
+    }
+
+
+    /* RESULT */
+
+    .result,
+    .result-content {
+        min-height: 560px;
+    }
+
+
+    .result-content {
+        width: 100%;
+
+        padding: 70px 24px;
+    }
+
+
+    .result-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(14,16,19,.86) 0%,
+                rgba(14,16,19,.72) 58%,
+                rgba(14,16,19,.30) 100%
+            );
+    }
+
+
+    /* FOOTER */
+
+    .case-footer {
+        padding: 45px 24px;
+    }
+
+}
+
+
+
+/* =========================================================
+   FINAL ALIGNMENT + RESPONSIVE FIXES
+========================================================= */
+
+
+/* ---------- 02 PROCESS: LEFT ALIGN ---------- */
+
+.process-heading {
+    width: min(690px, 100%);
+    max-width: 690px;
+
+    margin: 0 0 75px 0;
+
+    text-align: left;
+}
+
+.process-heading > p:last-child {
+    max-width: 580px;
+
+    margin: 25px 0 0;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    /* HERO */
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        width: 52%;
+        min-height: 600px;
+
+        padding-left: 6vw;
+        padding-right: 2vw;
+    }
+
+    .hero h1 {
+        font-size: clamp(46px, 6vw, 66px);
+    }
+
+    .hero-description {
+        max-width: 440px;
+    }
+
+
+    /* OVERVIEW */
+
+    .overview {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 80px 7vw;
+    }
+
+    .overview-copy {
+        max-width: 650px;
+
+        padding: 0;
+    }
+
+    .overview-image {
+        height: auto;
+    }
+
+    .overview-image img {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 16 / 9;
+
+        object-fit: cover;
+    }
+
+
+    /* PROCESS */
+
+    .process {
+        padding: 90px 7vw;
+    }
+
+    .process-heading {
+        width: 100%;
+        max-width: 650px;
+
+        margin: 0 0 65px;
+
+        text-align: left;
+    }
+
+    .process-heading > p:last-child {
+        margin: 24px 0 0;
+
+        text-align: left;
+    }
+
+    .process-flow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 60px 45px;
+    }
+
+    .process-connector {
+        display: none;
+    }
+
+
+    /* VISUAL DESIGN */
+
+    .visual-content {
+        width: 52%;
+
+        padding-left: 6vw;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience {
+        padding: 90px 7vw;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+
+        margin-top: 48px;
+    }
+
+    .experience-card {
+        min-height: auto;
+    }
+
+
+    /* RESULT */
+
+    .result-content {
+        width: 52%;
+
+        padding-left: 6vw;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    h2 {
+        font-size: 38px;
+        line-height: 1.05;
+    }
+
+    .section-label,
+    .eyebrow {
+        margin-bottom: 17px;
+
+        font-size: 9px;
+    }
+
+
+    /* ---------- HEADER ---------- */
+
+    .portfolio-header {
+        height: 64px;
+
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .portfolio-header nav {
+        gap: 11px;
+    }
+
+    .portfolio-header nav a {
+        font-size: 7px;
+        letter-spacing: .08em;
+    }
+
+
+    /* =====================================================
+       HERO
+    ====================================================== */
+
+    .hero {
+        min-height: 680px;
+    }
+
+    .hero-content {
+        width: 100%;
+        min-height: 680px;
+
+        justify-content: flex-start;
+
+        padding:
+            65px
+            22px
+            50px;
+    }
+
+    .hero h1 {
+        max-width: 480px;
+
+        font-size: clamp(43px, 13vw, 57px);
+
+        line-height: .98;
+    }
+
+    .hero-description {
+        max-width: 390px;
+
+        margin-top: 25px;
+
+        color: #4F534F;
+
+        font-size: 13px;
+
+        line-height: 1.65;
+    }
+
+    .tags {
+        gap: 7px;
+
+        margin-top: 27px;
+    }
+
+    .tags span {
+        padding: 8px 13px;
+
+        font-size: 9px;
+    }
+
+    /*
+       Stronger light area behind mobile text while
+       allowing the mockup to remain visible.
+    */
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(247,245,240,.98) 0%,
+                rgba(247,245,240,.94) 58%,
+                rgba(247,245,240,.65) 78%,
+                rgba(247,245,240,.18) 100%
+            );
+    }
+
+    .hero .background-image {
+        object-position: 58% center;
+    }
+
+
+    /* =====================================================
+       01 OVERVIEW
+    ====================================================== */
+
+    .overview {
+        display: block;
+
+        min-height: auto;
+
+        padding:
+            75px
+            22px;
+    }
+
+    .overview-copy {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 0;
+    }
+
+    .overview .section-description {
+        max-width: 100%;
+
+        margin-top: 22px;
+
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .overview-image {
+        width: 100%;
+        height: auto;
+
+        margin-top: 42px;
+    }
+
+    .overview-image img {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 4 / 3;
+
+        object-fit: cover;
+
+        border-radius: 3px;
+    }
+
+
+    /* =====================================================
+       02 PROCESS
+    ====================================================== */
+
+    .process {
+        padding:
+            75px
+            22px
+            85px;
+    }
+
+    .process-heading {
+        width: 100%;
+        max-width: 100%;
+
+        margin:
+            0
+            0
+            60px;
+
+        text-align: left;
+    }
+
+    .process-heading .section-label {
+        text-align: left;
+    }
+
+    .process-heading h2 {
+        max-width: 100%;
+
+        text-align: left;
+    }
+
+    .process-heading > p:last-child {
+        width: 100%;
+        max-width: 480px;
+
+        margin:
+            22px
+            0
+            0;
+
+        text-align: left;
+
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .process-flow {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 48px;
+    }
+
+    .process-connector {
+        display: none;
+    }
+
+    .process-step {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .process-icon {
+        width: 68px;
+        height: 68px;
+
+        margin:
+            0
+            auto
+            20px;
+    }
+
+    .process-step h3 {
+        margin-bottom: 10px;
+
+        font-size: 14px;
+    }
+
+    .process-step p {
+        max-width: 300px;
+
+        margin: 0 auto;
+
+        font-size: 11px;
+        line-height: 1.65;
+    }
+
+
+    /* =====================================================
+       03 VISUAL DESIGN
+    ====================================================== */
+
+    .visual-design {
+        min-height: 680px;
+    }
+
+    .visual-content {
+        width: 100%;
+        min-height: 680px;
+
+        justify-content: flex-start;
+
+        padding:
+            70px
+            22px
+            55px;
+    }
+
+    .visual-content .section-description {
+        max-width: 390px;
+
+        font-size: 13px;
+    }
+
+    .visual-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(247,245,240,.98) 0%,
+                rgba(247,245,240,.94) 57%,
+                rgba(247,245,240,.68) 77%,
+                rgba(247,245,240,.15) 100%
+            );
+    }
+
+    .visual-design .background-image {
+        object-position: 58% center;
+    }
+
+    .design-system {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+
+        margin-top: 38px;
+    }
+
+    .design-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .colour-row {
+        gap: 10px;
+    }
+
+    .swatch {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    /* =====================================================
+       04 EXPERIENCE
+    ====================================================== */
+
+    .experience {
+        padding:
+            75px
+            22px
+            80px;
+    }
+
+    .experience-heading {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .experience-heading > p:last-child {
+        max-width: 100%;
+
+        margin-top: 21px;
+
+        font-size: 13px;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        margin-top: 42px;
+    }
+
+    .experience-card {
+        min-height: 0;
+
+        padding:
+            25px
+            25px
+            27px;
+    }
+
+    .card-number {
+        margin-bottom: 20px;
+    }
+
+    .experience-card h3 {
+        margin-bottom: 9px;
+
+        font-size: 16px;
+    }
+
+    .experience-card p {
+        max-width: 100%;
+
+        font-size: 11px;
+    }
+
+
+    /* =====================================================
+       05 FINAL RESULT
+    ====================================================== */
+
+    .result {
+        min-height: 600px;
+    }
+
+    .result-content {
+        width: 100%;
+        min-height: 600px;
+
+        justify-content: flex-start;
+
+        padding:
+            75px
+            22px
+            50px;
+    }
+
+    .result-content h2 {
+        max-width: 430px;
+    }
+
+    .result-content > p:last-child {
+        max-width: 380px;
+
+        margin-top: 22px;
+
+        font-size: 13px;
+    }
+
+    .result-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(14,16,19,.88) 0%,
+                rgba(14,16,19,.78) 52%,
+                rgba(14,16,19,.52) 72%,
+                rgba(14,16,19,.12) 100%
+            );
+    }
+
+    .result .background-image {
+        object-position: 60% center;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .case-footer {
+        padding:
+            42px
+            22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .portfolio-header nav {
+        gap: 8px;
+    }
+
+    .portfolio-header nav a {
+        font-size: 6.5px;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    h2 {
+        font-size: 35px;
+    }
+
+
+    .hero-content,
+    .visual-content,
+    .result-content {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+
+    .overview,
+    .process,
+    .experience {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+
+    .tags span {
+        padding: 7px 11px;
+    }
+
+}
+
